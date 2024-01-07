@@ -1,0 +1,14 @@
+---
+import NavigationMobile from './NavigationMobile';
+interface Props {
+  pages: string[];
+}
+const { pages } = Astro.props;
+const { pathname } = Astro.url;
+---
+
+
+
+<header class="header header-mobile">
+    <NavigationMobile client:load />
+  </header>
